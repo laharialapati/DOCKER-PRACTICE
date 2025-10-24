@@ -29,7 +29,7 @@ jobs:
           context: ./springbootbackend
           file: ./springbootbackend/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/docker-practice-frontend:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/docker-practice-backend:latest
 
       - name: Build and push frontend image
         uses: docker/build-push-action@v5
