@@ -27,7 +27,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: ./springbootbackend
-          file: ./springbootbackend/backend.Dockerfile
+          file: ./springbootbackend/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/docker-practice-frontend:latest
 
@@ -35,6 +35,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: ./reactfrontend
-          file: ./reactfrontend/frontend.Dockerfile
+          file: ./reactfrontend/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/docker-practice-frontend:latest
